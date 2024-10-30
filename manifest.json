@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "X Time Tracker",
+  "version": "1.0",
+  "description": "Track time spent on X/Twitter",
+  "permissions": ["tabs", "storage", "activeTab", "webNavigation"],
+  "host_permissions": ["*://*.twitter.com/*", "*://*.x.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
